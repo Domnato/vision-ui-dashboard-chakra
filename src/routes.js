@@ -24,6 +24,7 @@ import RTLPage from "views/RTL/RTLPage.js";
 import Profile from "views/Dashboard/Profile.js";
 import SignIn from "views/Pages/SignIn.js";
 import SignUp from "views/Pages/SignUp.js";
+import DhomExpert from "views/ERP/DhomExpert.js";
 
 import {
   HomeIcon,
@@ -36,6 +37,14 @@ import {
 } from "components/Icons/Icons";
 
 var dashRoutes = [
+  {
+    path: "/dhom-expert",
+    name: "DHOM EXPERT",
+    rtlName: "DHOM EXPERT",
+    icon: <HomeIcon color='inherit' />,
+    component: DhomExpert,
+    layout: "/admin",
+  },
   {
     path: "/dashboard",
     name: "Dashboard",
