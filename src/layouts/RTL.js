@@ -115,13 +115,13 @@ export default function Dashboard(props) {
   return (
     <ChakraProvider theme={theme} resetCss={false}>
       <RtlProvider>
-        <Sidebar
-          routes={routes}
-          logoText={"VISION UI FREE"}
-          display='none'
-          sidebarVariant={sidebarVariant}
-          {...rest}
-        />
+      <Sidebar
+        routes={routes}
+        logoText={"DHOM EXPERT"}
+        display='none'
+        sidebarVariant={sidebarVariant}
+        {...rest}
+      />
         <MainPanel
           variant='rtl'
           ref={mainPanel}
@@ -130,14 +130,14 @@ export default function Dashboard(props) {
             xl: "calc(100% - 275px)",
           }}>
           <Portal>
-            <AdminNavbar
-              onOpen={onOpen}
-              logoText={"VISION UI FREE"}
-              brandText={getActiveRoute(routes)}
-              secondary={getActiveNavbar(routes)}
-              fixed={fixed}
-              {...rest}
-            />
+              <AdminNavbar
+                onOpen={onOpen}
+                logoText={"DHOM EXPERT"}
+                brandText={getActiveRoute(routes)}
+                secondary={getActiveNavbar(routes)}
+                fixed={fixed}
+                {...rest}
+              />
           </Portal>
           {getRoute() ? (
             <PanelContent>
